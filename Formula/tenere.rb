@@ -6,10 +6,10 @@ class Tenere < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pythops/tenere/releases/download/v0.1/tenere-aarch64-macos"
-      sha256 "83a5c5b5f5d6c18a1a2f1d5a6e5a244e5da6d2b1c9b7e343d6c55810c0bdc36e"
+      sha256 "20162390115b05e2eb516ad4861d02150701bbeae3d6974f6753d7296198c3d4"
     elsif Hardware::CPU.intel?
       url "https://github.com/pythops/tenere/releases/download/v0.1/tenere-x86_64-macos"
-      sha256 "d8082a2f72513a15d47c95aa40e26f69b8cc34b30d29de52f1d60c02184ed7a0"
+      sha256 "fcb377c4901628599abf034409442bdeb2dcce8943133a809c013ab884464a39"
     end
   end
 
