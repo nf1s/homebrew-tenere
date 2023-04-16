@@ -17,4 +17,12 @@ class Tenere < Formula
     bin.install "tenere-aarch64-macos" => "tenere" if Hardware::CPU.arm?
     bin.install "tenere-x86_64-macos" => "tenere" if Hardware::CPU.intel?
   end
+
+<<-DOC
+  # when we can enable the test when tenere implements a --version flag
+  test do
+    assert_match "tenere #{version}", shell_output("#{bin}/tenere --version")
+  end
+DOC
+
 end
